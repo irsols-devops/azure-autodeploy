@@ -3,7 +3,9 @@
 
 First step is to login to the Azure CLI using:
 
-$ az login
+```
+$ az login 
+```
 Once logged in - it's possible to list the Subscriptions associated with the account via:
 "To sign in, use a web browser to open the page https://aka.ms/devicelogin and enter the code XXXXXXXXX to authenticate.
 "
@@ -11,9 +13,7 @@ Validate that you've successfully logged in by executing following command :
 
 $ az account list
 The output (similar to below) will display one or more Subscriptions - with the ID field being the subscription_id field referenced above.
-
-<code>
-
+```
 [
   {
     "cloudName": "AzureCloud",
@@ -28,15 +28,14 @@ The output (similar to below) will display one or more Subscriptions - with the 
     }
   }
 ]
-
-</code>
+```
 
 Note : id is your subscription id from above output.
 
 Next step is to set your Subscription, which you can specify by executing following: 
-
+```
 $ az account set --subscription="YOUR_AZURE_SUBSCRIPTION_ID"
-
+```
 
 Optionally : You can find which regions are available and closer to you (in United States ) 
 by executing following and setting that appropriately in irsols quick deploy wrapper:
