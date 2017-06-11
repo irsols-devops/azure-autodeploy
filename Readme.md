@@ -12,6 +12,8 @@ Validate that you've successfully logged in by executing following command :
 $ az account list
 The output (similar to below) will display one or more Subscriptions - with the ID field being the subscription_id field referenced above.
 
+<code>
+
 [
   {
     "cloudName": "AzureCloud",
@@ -26,6 +28,9 @@ The output (similar to below) will display one or more Subscriptions - with the 
     }
   }
 ]
+
+</code>
+
 Note : id is your subscription id from above output.
 
 Next step is to set your Subscription, which you can specify by executing following: 
