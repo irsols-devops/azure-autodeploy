@@ -5,19 +5,19 @@
     "dnsLabelPrefix": {
       "type": "string",
       "metadata": {
-        "description": "User name for the Virtual Machine."
+        "description": "Provide the dnsLabelprefix to identify with FQDN appended"
       }
     },
     "vmName": {
       "type": "string",
       "metadata": {
-        "description": "Password for the Virtual Machine."
+        "description": "Name of the Virtual Machine."
       }
     },
     "virtualNetworkName": {
       "type": "string",
       "metadata": {
-        "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
+        "description": "Unique vm network name for the Virtual Machine."
       }
     },
     "ubuntuOSVersion": {
@@ -36,8 +36,8 @@
   },
   "variables": {
     "vmSize": "Standard_A0",
-    "adminUsername": "kz1",
-    "adminPassword": "P455W0RD123",
+    "adminUsername": "irsols",
+    "adminPassword": "P455W0RD123!",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
